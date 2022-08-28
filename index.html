@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/styles.css? v = 1.0">
+    <style>
+        main {
+            background-image: url(./assets/home.png);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            height: 98vh;
+            justify-content: space-between;
+            width: 99vw;
+            border: 1px solid red;
+        }
+        .ancients-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-width: 40%;
+    padding: 20px;
+}
+.ancients-container{display:flex;flex-direction:column;flex-wrap:wrap;gap:10px;min-width:40%;padding:20px}.ancients-container .ancient-card{background-position:50%;background-repeat:no-repeat;background-size:contain;box-sizing:border-box;cursor:pointer;height:260px;width:200px}.ancients-container .ancient-card.active{border:2px solid red}.difficulty-container{display:flex;flex-direction:column;gap:20px;height:100vh;justify-content:center}.difficulty-container .difficulty{border:2px solid purple;box-sizing:border-box;color:purple;cursor:pointer;padding:5px;text-align:center}.difficulty-container .difficulty.active{background-color:red}.deck-container{align-items:center;display:flex;flex-direction:column;gap:20px;justify-content:center;min-width:30%}.deck-container .shuffle-button{background-color:red;border:2px solid purple;color:purple;cursor:pointer;padding:5px}.deck-container .current-state{display:flex;flex-direction:column;gap:10px;min-height:30%}.deck-container .current-state .stage-container{align-items:center;display:flex;flex-direction:column;gap:5px}.deck-container .current-state .stage-container .stage-text{color:purple}.deck-container .current-state .stage-container .stage-text.done{color:red}.deck-container .current-state .stage-container .dots-container{align-items:center;display:flex;gap:20px;justify-content:center}.deck-container .current-state .stage-container .dot{align-items:center;border-radius:50%;display:flex;height:30px;justify-content:center;width:30px}.deck-container .current-state .stage-container .dot.green{background-color:green}.deck-container .current-state .stage-container .dot.brown{background-color:brown}.deck-container .current-state .stage-container .dot.blue{background-color:blue}.deck-container .deck{cursor:pointer}.deck-container .deck,.deck-container .last-card{background-size:cover;height:190px;width:130px}.App{background-position:50%;background-repeat:no-repeat;background-size:cover;display:flex;gap:20px;height:100vh;justify-content:space-between;width:100vw}
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="ancients-container">
+            <div class="ancient-card active"
+                style="background-image: url(&quot;/static/media/Azathoth.e76cc60e6f2b9bb167ce.png&quot;);"></div>
+            <div class="ancient-card "
+                style="background-image: url(&quot;/static/media/Cthulthu.e7bfd029744dc9f87c1a.png&quot;);"></div>
+            <div class="ancient-card "
+                style="background-image: url(&quot;/static/media/IogSothoth.c5b7717bff973cda27be.png&quot;);"></div>
+            <div class="ancient-card "
+                style="background-image: url(&quot;/static/media/ShubNiggurath.68c4272e00c9596e65b1.png&quot;);"></div>
+        </div>
+        <div class="difficulty-container">
+            <div class="difficulty ">Низкая</div>
+            <div class="difficulty ">Средняя</div>
+            <div class="difficulty ">Высокая</div>
+        </div>
+        <div class="deck-container"></div>
+        </div>
+    </main>
+
+    <script src="js / scripts.js"> </script>
+</body>
+
+</html>
